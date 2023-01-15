@@ -12,6 +12,7 @@ export const useFetchData = (endpoint) => {
     const fetchData = async () => {
         setLoading(true)
       let response = await axios.get(url, {
+        mode: 'no-cors',
         headers: {
           Accept: "*/*",
           Authorization: auth,
