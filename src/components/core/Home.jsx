@@ -41,7 +41,10 @@ export const Home = () => {
 
   const submitBooking = async () => {
     let res = await createBooking(timeSlots);
-    console.log(res);
+    if (res.error === false) {
+      alert("Booking Success");
+      window.location.reload();
+    }
   };
   const filteredData =
     !loading && data.filter((ele) => ele["Day of Week"] === daySelected);

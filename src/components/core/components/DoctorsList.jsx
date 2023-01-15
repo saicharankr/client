@@ -37,7 +37,6 @@ export const TimeSlotSelection = ({
   const { data, loading, error } = useFetchData(
     `/bookings?name=${doctorSelected.Name}&day=${doctorSelected["Day of Week"]}`
   );
-  console.log(data);
   // eslint-disable-next-line array-callback-return
   let filterData =
     !loading &&

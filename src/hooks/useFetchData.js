@@ -27,7 +27,6 @@ export const useFetchData = (endpoint) => {
         }
       }
       setLoading(false)
-      console.log(response);
     };
     fetchData()
   }, [auth, url]);
