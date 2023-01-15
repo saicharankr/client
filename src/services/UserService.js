@@ -3,7 +3,6 @@ const url = process.env.REACT_APP_API_URI;
 export const signup = (user) => {
   return fetch(`${url}/signup`, {
     method: "POST",
-    mode: 'no-cors',
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -19,7 +18,6 @@ export const signup = (user) => {
 export const activate = (data) => {
   return fetch(`${url}/activate`, {
     method: "POST",
-    mode: 'no-cors',
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -35,7 +33,6 @@ export const activate = (data) => {
 export const signin = (data) => {
   return fetch(`${url}/signin`, {
     method: "POST",
-    mode: 'no-cors',
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -51,7 +48,6 @@ export const signin = (data) => {
 export const forgotPassword = (data) => {
   return fetch(`${url}/forgot-password`, {
     method: "POST",
-    mode: 'no-cors',
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -67,7 +63,6 @@ export const forgotPassword = (data) => {
 export const resetPassword = (data) => {
   return fetch(`${url}/reset-password`, {
     method: "POST",
-    mode: 'no-cors',
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -85,7 +80,6 @@ export const createBooking = async (data) => {
   const auth = "Bearer " + token;
   return fetch(`${url}/createBookings`, {
     method: "POST",
-    mode: 'no-cors',
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
