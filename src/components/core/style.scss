@@ -1,0 +1,28 @@
+  .content_area {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .days_of_week {
+      border: 1px solid gray;
+      padding: 5px;
+      margin: 3px;
+      border-radius: 5px;
+  }
+
+  .days_of_week:hover {
+      background-color: blueviolet;
+      color: cornsilk;
+      cursor: pointer;
+  }
+
+  .day_active {
+      background-color: blueviolet;
+      color: cornsilk;
+  }
+
+  .flex-gap {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 12px;
+  }

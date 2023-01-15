@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-screen {
+    height: 90vh !important;
+}
+
+/* @media screen and (max-width: 600px){
+    body{
+        position:absolute;
+    } 
+} */
